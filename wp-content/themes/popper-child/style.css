@@ -11,9 +11,12 @@ Version: 0.1.0
 .site-description{
     font-style: italic;
 }
-@media screen and (min-width: 30em) {
-    .entry-meta {
-        margin: 0 -1.894736842105263em;
-        background-color: pink;
-    }
+.hentry::before{
+    display: block;
+    padding: .2em 1em;
+    text-align: right;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 80%;
+    content: "Sticky Post";
+    background-color: hsl(0, 0%, 50%);
 }
