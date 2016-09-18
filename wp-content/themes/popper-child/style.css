@@ -5,6 +5,15 @@ Version: 0.1.0
 */
 @import url("../popper/style.css");
 
-body{
-    background-color: pink;
+.site-title{
+    font-weight: 300;
+}
+.site-description{
+    font-style: italic;
+}
+@media screen and (min-width: 30em) {
+    .entry-meta {
+        margin: 0 -1.894736842105263em;
+        background-color: pink;
+    }
 }
