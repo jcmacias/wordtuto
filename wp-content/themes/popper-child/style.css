@@ -1,0 +1,10 @@
+/*
+Theme Name: Popper Child Theme
+Template: popper
+Version: 0.1.0
+*/
+@import url("../popper/style.css");
+
+body{
+    background-color: pink;
+}
