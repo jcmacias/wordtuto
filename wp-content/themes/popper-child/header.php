@@ -27,7 +27,7 @@
 	<div id="page" class="hfeed site <?php echo get_theme_mod( 'layout_setting', 'no-sidebar' ); ?>">
 <?php }?>
 
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'popper' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'popper_child' ); ?></a>
 
 	<?php
 		if ( get_header_image() ) { ?>
@@ -41,7 +41,7 @@
 			<?php $site_title = get_bloginfo( 'name' ); ?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<div class="screen-reader-text">
-					<?php printf( esc_html__('Go to the home page of %1$s', 'popper'), $site_title ); ?>
+					<?php printf( esc_html__('Go to the home page of %1$s', 'popper_child'), $site_title ); ?>
 				</div>
 				<?php
 					// Display logo if Custom Logo or Site Icon is defined, otherwise display First Letter
@@ -71,7 +71,7 @@
 
 		<?php if ( has_nav_menu( 'primary' ) ) : ?>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'popper' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'popper_child' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 		<?php endif; ?>

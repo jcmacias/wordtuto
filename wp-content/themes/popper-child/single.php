@@ -19,11 +19,11 @@ get_header(); ?>
                 <?php
                 // Previous/next post navigation.
                 the_post_navigation( array(
-                    'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'popper' ) . '</span> ' .
-                        '<span class="screen-reader-text">' . __( 'Next post:', 'popper' ) . '</span> ' .
+                    'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'popper_child' ) . '</span> ' .
+                        '<span class="screen-reader-text">' . __( 'Next post:', 'popper_child' ) . '</span> ' .
                         '<span class="post-title">%title</span>',
-                    'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'popper' ) . '</span> ' .
-                        '<span class="screen-reader-text">' . __( 'Previous post:', 'popper' ) . '</span> ' .
+                    'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'popper_child' ) . '</span> ' .
+                        '<span class="screen-reader-text">' . __( 'Previous post:', 'popper_child' ) . '</span> ' .
                         '<span class="post-title">%title</span>',
                 ) );
                 ?>
