@@ -111,3 +111,42 @@ a:focus,
     background-color: #E9E9EB;
     color: #000;
 }
+
+.meta-content .cat-links {
+    display: block;
+}
+
+.index-entry-meta .cat-links {
+    display: inline-block;
+}
+
+@media screen and (min-width: 30em)
+{
+    .index-entry-meta .posted-on::after{
+        content: "|";
+        padding: 0 1em;
+    }
+}
+
+.footer-navigation{
+    margin: -2em auto 4em;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-navigation a {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus{
+   outline: 1px solid #FFFFFF;
+}
